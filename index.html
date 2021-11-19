@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cdc751e44e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1>MY LIBRARY</h1>
+    </header>
+    <main>
+        <div id="tableContainer">
+            <table>
+    
+                <tr id="tableHeader">
+                    <th id="upperLeftTableHeader">Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Reading Status</th>
+                    <th id="upperRightTableHeader" class="deleteColumn">Delete</th>
+                </tr>
+                
+            </table>
+        </div>
+        <!-- trigger the modal form -->
+        <button id="addBookButton">+</button>
+        <!-- Modal container -->
+        <div id="modal">
+            <!-- Modal content -->
+            <div id="modalContent">
+                <p id="closeForm">X</p>
+                <form>
+                    <label for="titleInput">Title</label>
+                    <input type="text" id="titleInput" required>
+                    <label for="Author">Author</label>
+                    <input type="text" id="authorInput" required>
+                    <label for="pagesInput">Number of pages</label>
+                    <input type="number" id="pagesInput" min="1" required>
+                    <div class="toggleWrapper">
+                        <p>Not Read</p>
+                        
+                        <div>
+                            <input type="checkbox" id="switch" class="checkbox">
+                            <label for="switch" class="toggle"></label>
+                        </div>
+                        
+                        <p>Read</p>
+                    </div>
+                    <button type="button" id="submitForm">Submit</button>
+                </form>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
